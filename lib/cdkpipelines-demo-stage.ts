@@ -12,6 +12,7 @@ export class CdkpipelinesDemoStage extends Stage {
 
     const service = new CdkpipelinesDemoStack(this, 'WebService');
     
+    
     // Expose CdkpipelinesDemoStack's output one level higher
     this.urlOutput = service.urlOutput;
   }
